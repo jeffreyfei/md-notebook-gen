@@ -14,7 +14,12 @@ npm install
 
 Generate HTML notebook
 ```
-./convert_notebook.sh <input_dir>
+./generate_notebook.sh <input_dir>
+```
+
+Convert individual Markdown file to HTML
+```
+./convert_html.sh <input_file> <output_file>
 ```
 
 - Default output directory is `output/`

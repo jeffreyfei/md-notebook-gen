@@ -21,6 +21,6 @@ for path in $(find $input_dir -type f -follow -print); do
 
         name="${file%.*}.html"
 
-        ./generate_html.sh $path $dest/$name
+        ./convert_html.sh $path $dest/$name
     fi
 done
