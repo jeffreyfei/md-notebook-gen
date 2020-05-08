@@ -63,8 +63,9 @@ target_path=$output
 # Inject head tags for target html
 printf "$(cat $precontent)" $title > $target_path
 
-# Call github markdown API to convert md content
-curl https://api.github.com/markdown/raw -X "POST" -H "Content-Type: text/plain" -d "$(cat $md_path)" >> $target_path
+# Call showdown to convert md to html; You can replace this with github API here
+# but you will get rate limited
+node showdown_wrapper.js "$(cat $md_path)" >> $target_path
 
 # Inject foot tags for target html
 printf "$(cat $postcontent)" "$(cat $stylesheet)" >> $target_path
