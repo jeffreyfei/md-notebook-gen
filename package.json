@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "showdown": "^1.9.0"
+    "showdown": "^1.9.0",
+    "showdown-highlight": "^2.1.4"
   }
 }
