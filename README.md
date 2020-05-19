@@ -4,6 +4,7 @@
 same directory structure
 - Converter implementation is a wrapper around [showdownjs](https://github.com/showdownjs/showdown)
 - Credits to [KrauseFx/markdown-to-html-github-style](https://github.com/KrauseFx/markdown-to-html-github-style) for providing the stylesheet
+- Syntax highlighting enabled by [highlight.js](https://highlightjs.org/)
 
 ## Usage
 
